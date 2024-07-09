@@ -53,7 +53,7 @@ conda activate && \
 python3 -m pip install scipion-installer && \
 python3 -m scipioninstaller -conda -noXmipp -noAsk /opt/scipion && \
 /opt/scipion/scipion3 config --overwrite --unattended
-cat <<EOF >> /opt/scipion/config/scipion3.conf
+cat <<EOF >> /opt/scipion/config/scipion.conf
 [BUILD]
 CUDA = True
 CUDA_BIN = /usr/local/cuda/bin

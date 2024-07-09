@@ -110,7 +110,7 @@ curl -qsSLkO https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.
 && rm Miniconda3-latest-Linux-x86_64.sh
 /opt/miniconda3/bin/conda update conda && /opt/miniconda3/bin/conda update --all --yes
 
-PATH=/opt/miniconda3/bin:/usr/local/bin:$PATH
+PATH=/opt/miniconda3/bin:/usr/local/bin:\$PATH
 export PATH
 
 unset module || :

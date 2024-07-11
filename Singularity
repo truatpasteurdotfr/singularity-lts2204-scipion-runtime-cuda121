@@ -108,7 +108,7 @@ cat <<EOF > /00_install_miniconda_scipion-installer.sh
 curl -qsSLkO https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
 && bash Miniconda3-latest-Linux-x86_64.sh -b -p /opt/miniconda3 \
 && rm Miniconda3-latest-Linux-x86_64.sh
-/opt/miniconda3/bin/conda update conda && /opt/miniconda3/bin/conda update --all --yes
+/opt/miniconda3/bin/conda update conda --yes && /opt/miniconda3/bin/conda update --all --yes
 
 PATH=/opt/miniconda3/bin:/usr/local/bin:\$PATH
 export PATH

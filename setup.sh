@@ -18,6 +18,8 @@ _B=/dev/shm/opt-lts2204-cuda121
 
 # apptainer flags examples
 _F=""
+# nvidia
+_F="--nv ${_F}"
 # mount /run
 _F="-B /run  ${_F}"
 # mount _A as /opt in the container
